@@ -1,0 +1,25 @@
+
+<html ng-app="formExample">
+    <head>
+
+
+        <script src="js/angular.js" ></script>
+        <script src="js/main.js"></script>
+    </head>
+
+    <body>
+		<div ng-controller="getValue">
+		
+		<select ng-model="selectedId1" ng-change="onUserChange1()" ng-init="displayData1()" ng-options="x.name for x in country"> select country </select>
+		
+		<select ng-model="selectedId2" ng-change="onUserChange2()" ng-init="displayData2()" ng-options="x.name for x in state"> select country </select>
+		
+		<select ng-model="selectedId3"    ng-init="displayData3()" ng-options="x.name for x in city"> select country </select>
+		
+		
+		
+        
+
+    </body>
+
+</html>
